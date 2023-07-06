@@ -1,6 +1,7 @@
 {
   "name": "demo_v2",
   "version": "0.1.0",
+  "type":"module",
   "bin": {
     "demo_v2": "bin/demo_v2.js"
   },
