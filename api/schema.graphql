@@ -1,0 +1,62 @@
+type users{
+    userId: ID
+    userName: String
+    gender: String
+    mobileNumber: String
+    role: String
+}
+
+type books{
+    bookId: ID
+    bookName: String
+    totalPages: Int
+}
+
+type cart{
+    userId : String
+    addedCartId : String
+}
+
+type Query{
+    usersList: [users]
+    getUser(userId: ID): users
+    booksList: [books]
+    getBook(bookId: ID!) : books
+    getCart(userId: ID!) : cart
+    cartList : [cart] 
+}
+
+input createUserInput{
+    userName: String!
+    gender: String!
+    mobileNumber: String!
+    role: String!
+}
+
+input updateUserInput{
+    userId: ID
+    userName: String
+    gender: String
+    mobileNumber: String
+    role: String
+}
+
+input createBookInput{
+    bookName: String
+    totalPages: Int
+}
+
+input addCartInput{
+    userId: String
+    addedCartId: String
+}
+
+type Mutation{
+    createUser(input: createUserInput): String
+    updateUser(input: updateUserInput) : String
+    deleteUser(userId: ID!): String
+    createBook(input: createBookInput): String
+    deleteBook(bookId: ID!): String
+    addCart(input: addCartInput) : String
+    deleteCart(userId: ID!) : String
+}

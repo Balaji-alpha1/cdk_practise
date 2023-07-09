@@ -1,0 +1,11 @@
+{
+  "DemoV2Stack": {
+    "bookstable": "arn:aws:dynamodb:ap-south-1:288883441669:table/Books",
+    "graphqlurl": "https://wraxbaifojavddroeooucxagoe.appsync-api.ap-south-1.amazonaws.com/graphql",
+    "cartarn": "arn:aws:lambda:ap-south-1:288883441669:function:cart",
+    "userarn": "arn:aws:lambda:ap-south-1:288883441669:function:users",
+    "usertable": "arn:aws:dynamodb:ap-south-1:288883441669:table/Users",
+    "booksarn": "arn:aws:lambda:ap-south-1:288883441669:function:books",
+    "carttable": "arn:aws:dynamodb:ap-south-1:288883441669:table/Cart"
+  }
+}

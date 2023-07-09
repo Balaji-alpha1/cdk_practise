@@ -1,5 +1,5 @@
 {
-  "name": "src",
+  "name": "books",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-cdk": "^2.87.0",
+    "aws-sdk": "^2.1413.0",
+    "uuid": "^9.0.0"
+  }
 }
